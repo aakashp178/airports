@@ -190,8 +190,7 @@ function searchFilter(e) {
     filterData = filterData.filter((airport) => {
       return (
         airport.Name.toLowerCase().includes(e.target.value.toLowerCase()) || 
-        airport.ICAO.toLowerCase().includes(e.target.value.toLowerCase()) ||
-        airport.IATA.toLowerCase().includes(e.target.value.toLowerCase())
+        airport.ICAO.toLowerCase().includes(e.target.value.toLowerCase())
       )
     });
     searchFilterData = filterData;
