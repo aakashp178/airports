@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport filter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet"> -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="container main">
+            <div class="table-sec">
+                <div class="d-flex justify-content-between align-center">
+                    <h1 class="heading">Filter <span>airports</span></h1>
+                    <i class="fa fa-th-large" aria-hidden="true"></i>
+                </div>
+                <div class="filter-block" style="margin-bottom: 40px;">
+                    <div class="type-block">
+                        <h4 class="sub-heading">Type</h4>
+                        <input type="checkbox" id="Small" name="small" value="small">
+                        <label for="Small"> Small</label>
+                        <input type="checkbox" id="Medium" name="Medium" value="medium">
+                        <label for="Medium"> Medium</label>
+                        <input type="checkbox" id="Large" name="Large" value="large">
+                        <label for="Large"> Large</label>
+                        <input type="checkbox" id="Heliport" name="Heliport" value="heliport">
+                        <label for="Heliport"> Heliport</label>
+                        <input type="checkbox" id="closed" name="closed" value="closed">
+                        <label for="closed"> closed</label>
+                        <input type="checkbox" id="favorite" name="favorite" value="favorite">
+                        <label for="favorite"> In your favorites</label>
+                    </div>
+                    <div class="search-block">
+                        <h4 class="sub-heading">Filter by search</h4>
+                        <input type="text" placeholder="Search" id="search">
+                    </div>
+                </div>
+                <div id="myData"></div>
+                <div class="table-footer">
+                    <div class="d-flex justify-content-between align-center">
+                        <i class="fa fa-arrow-left prev" aria-hidden="true"></i>
+                        <span style="font-size: 14px;">Showing 
+                            <span class="font-weight-bold pageStart">1</span>-
+                            <span class="font-weight-bold pageTo">4</span> of 
+                            <span class="font-weight-bold totalCount">Loading...</span> results
+                        </span>
+                        <i class="fa fa-arrow-right next" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
